@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+table.readonly{
+	table-layout: auto;
+	font-size: x-small;
+	border: 1px solid black;
+}
+
+.readonly tbody > tr > td {
+	min-width:10px;
+	min-height:10px;
+	text-align:center;
+}
+
+table.board{
+	border: 1px solid black;
+}
+
+.board tbody > tr > td {
+	min-width:40px;
+	min-height:40px;
+	text-align:center;
+	border: 1px solid black;
+}
+.listitem{
+	margin-top: 10px;
+}
+td.bgclg{
+	background-color: lightgrey;
+}
+td > a{
+	color:	gray;
+}
+td > a:hover{
+	color:	red;
+}
+.value{
+	color:	black;
+}
+.lastvalue{
+	color:	green;
+}
