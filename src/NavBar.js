@@ -38,7 +38,7 @@ export function MainNavBar({id, name, move, modified, onSave, onNew})
 			</OverlayTrigger>
 		);
 	}
-	const title = <>{name}{asterisk} - Move # ${move}</>;
+	const title = <>{name}{asterisk} - Move #{move}</>;
 	return (
 		<>
 			<Navbar bg="light">
@@ -52,7 +52,7 @@ export function MainNavBar({id, name, move, modified, onSave, onNew})
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>
-			<SaveAsDialog show={showSaveAsDialog} name={name} onSave={handleSave} onClose={()=>setShowSaveAsDialog(false)}/>
+			<SaveAsDialog show={showSaveAsDialog} defname={name} onSave={handleSave} onClose={()=>setShowSaveAsDialog(false)}/>
 		</>
 	);
 }

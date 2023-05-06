@@ -45,7 +45,7 @@ table.readonly{
 
 .readonly tbody > tr > td {
 	min-width:10px;
-	min-height:10px;
+/*	min-height:10px;*/
 	text-align:center;
 }
 
@@ -73,7 +73,24 @@ td > a:hover{
 }
 .value{
 	color:	black;
+	text-decoration: none;
 }
 .lastvalue{
 	color:	green;
+}
+.historyContainer{
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 10px;
+	column-gap: 20px;	
+}
+.historyItem{
+	display: flex;
+	width: fit-content;
+	max-width: 110px;
+	flex-direction: column;
+}
+.historyItemLabel{
+	display: flex;
+	justify-content: center;
 }
